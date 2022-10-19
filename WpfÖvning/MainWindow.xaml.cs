@@ -31,5 +31,12 @@ namespace WpfÖvning
             File.AppendAllText("myTextfile.txt", TBox_WriteToFile.Text.ToString() + "\n");
             TBox_WriteToFile.Text = "";
         }
+
+        private void B_ReadFromFile_Click(object sender, RoutedEventArgs e)
+        {
+            string fil = File.ReadAllText("myTextfile.txt");
+
+            TBlock_ShowFromFile.Text = fil + "\n";
+        }
     }
 }
