@@ -7,10 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="TBox_WriteToFile" HorizontalAlignment="Left" Margin="72,164,0,0" TextWrapping="Wrap" Text="Skriv din text här...." VerticalAlignment="Top" Width="200" MouseDoubleClick="TBox_WriteToFile_TextChanged"/>
-        <Button x:Name="B_SendToFile" Content="Lägg till..." HorizontalAlignment="Left" Margin="72,202,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="B_SendToFile_Click"/>
-        <Button x:Name="B_ReadFromFile" Content="Läs från filen..." HorizontalAlignment="Left" Margin="72,62,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="B_ReadFromFile_Click"/>
-        <TextBlock x:Name="TBlock_ShowFromFile" HorizontalAlignment="Left" Margin="334,64,0,0" TextWrapping="Wrap" Text="Text från filen..." VerticalAlignment="Top" Width="326" Height="330"/>
+        <TextBox x:Name="TBox_WriteToFile" HorizontalAlignment="Left" Margin="72,217,0,0" TextWrapping="Wrap" Text="Skriv din text här...." VerticalAlignment="Top" Width="200" MouseDoubleClick="TBox_WriteToFile_TextChanged" Height="20" BorderBrush="#FF05077D"/>
+        <Button x:Name="B_SendToFile" Content="Lägg till..." HorizontalAlignment="Left" Margin="72,255,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="B_SendToFile_Click" BorderBrush="#FF05077D"/>
+        <Button x:Name="B_ReadFromFile" Content="Hämta sparat text..." HorizontalAlignment="Left" Margin="72,116,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="B_ReadFromFile_Click" BorderBrush="#FF05077D"/>
+        <TextBlock x:Name="TBlock_ShowFromFile" HorizontalAlignment="Left" Margin="334,116,0,0" TextWrapping="Wrap" Text="Text från filen..." VerticalAlignment="Top" Width="218" Height="278" Background="#FF05077D" Foreground="#FFFAFAFA"/>
+        <TextBox x:Name="TBox_SendMail" HorizontalAlignment="Left" Margin="72,324,0,0" TextWrapping="Wrap" Text="Ditt mailadress..." VerticalAlignment="Top" Width="200" Height="20" MouseDoubleClick="TBox_SendMail_TextChanged" BorderBrush="#FF05077D"/>
+        <Button x:Name="B_SendMail" Content="Skicka mail..." HorizontalAlignment="Left" Margin="72,362,0,0" VerticalAlignment="Top" Height="30" Width="80" Click="B_SendMail_Click" BorderBrush="#FF05077D"/>
+        <TextBlock x:Name="TBlock_ShowMaillist" HorizontalAlignment="Left" Margin="572,116,0,0" TextWrapping="Wrap" Text="Sparade mailadresser..." VerticalAlignment="Top" Width="218" Height="276" Foreground="#FFFAFAFA" Background="#FF05077D"/>
+        <Button x:Name="B_Showemailadresses" Content="Hämta sparade mailadresser..." HorizontalAlignment="Left" Margin="72,160,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="B_Showemailadresses_Click" BorderBrush="#FF05077D"/>
+        <Label x:Name="Label_Header" Content="Övningsuppgift WPF" HorizontalAlignment="Left" Margin="72,23,0,0" VerticalAlignment="Top" Width="685" Height="40" BorderBrush="#FF05077D" FontWeight="Bold" FontSize="18" Foreground="#FF05077D"/>
+        <Label x:Name="Label_TextFile" Content="Text från filen:" HorizontalAlignment="Left" Margin="334,80,0,0" VerticalAlignment="Top" BorderBrush="#FF05077D" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.212,1.117"/>
+        <Label x:Name="Label_MailFile" Content="Mailadresser från filen:" HorizontalAlignment="Left" Margin="572,80,0,0" VerticalAlignment="Top" BorderBrush="#FF05077D" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.212,1.117"/>
 
     </Grid>
 </Window>
