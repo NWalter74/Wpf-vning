@@ -38,5 +38,10 @@ namespace WpfÖvning
 
             TBlock_ShowFromFile.Text = fil + "\n";
         }
+
+        private void TBox_WriteToFile_TextChanged(object sender, MouseButtonEventArgs e)
+        {
+            TBox_WriteToFile.Text = "";
+        }
     }
 }

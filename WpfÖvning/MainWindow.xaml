@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="TBox_WriteToFile" HorizontalAlignment="Left" Margin="72,164,0,0" TextWrapping="Wrap" Text="Skriv din text här...." VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="TBox_WriteToFile" HorizontalAlignment="Left" Margin="72,164,0,0" TextWrapping="Wrap" Text="Skriv din text här...." VerticalAlignment="Top" Width="200" MouseDoubleClick="TBox_WriteToFile_TextChanged"/>
         <Button x:Name="B_SendToFile" Content="Lägg till..." HorizontalAlignment="Left" Margin="72,202,0,0" VerticalAlignment="Top" Width="60" Height="30" Click="B_SendToFile_Click"/>
         <Button x:Name="B_ReadFromFile" Content="Läs från filen..." HorizontalAlignment="Left" Margin="72,62,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="B_ReadFromFile_Click"/>
         <TextBlock x:Name="TBlock_ShowFromFile" HorizontalAlignment="Left" Margin="334,64,0,0" TextWrapping="Wrap" Text="Text från filen..." VerticalAlignment="Top" Width="326" Height="330"/>
